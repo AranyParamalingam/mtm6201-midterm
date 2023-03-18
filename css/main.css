@@ -123,17 +123,30 @@ p {
 }
 
 /*display image of half the page*/
+.mission-container {
+    border: 5px solid rgb(255, 228, 228);
+    display: grid;
+        /*6 columns, 3 rows*/
+        grid-template-columns: repeat(2, 1fr, 2fr);
+        grid-template-rows: (1fr);
+        grid-gap: 20px;
+        /*padding*/
+}
+
 .half-img {
-    float: left;
-    width: 49%;
-    height: 100%;
-    overflow: hidden;
+    display: grid;
+        justify-content:left;
+        align-items:flex-start;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
 }
 
 .mission {
-    float: right;
-    width: 49%;
-    border: 5px solid #ff8c8c;
-    padding-bottom: 12%;
+    display: grid;
+        justify-content: right;
+        align-items: flex-end;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    padding-bottom: 30px;
 }
 

@@ -10,9 +10,10 @@ html {
 
 header {
     text-align: center;
-    background-color:rgb(255, 228, 228);
+    background-color:rgb(252, 236, 236);
     padding: 20px;
     font-size: 1.33em;
+    font-family: 'Shrikhand', cursive;
 }
 
 header img {
@@ -31,7 +32,7 @@ header img {
 form.search-bar input[type=text] {
     padding: 10px;
     font-size: 17px;
-    border: 1px solid #c530f7;
+    border: 1px solid #ca87e1;
     width: 80%;
     background: #ffffff;
     margin-right: 0%;
@@ -40,17 +41,17 @@ form.search-bar input[type=text] {
   form.search-bar button {
     width: 10%;
     padding: 10px;
-    color: #c530f7;
+    color: #ca87e1;
     background-color: transparent;
     font-size: 17px;
-    border: 1px solid #c530f7;
+    border: 1px solid #ca87e1;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
   }
 
 /*navbar hovering and untouched*/
 .navbar a {
-    color: #c530f7;
+    color: #ca87e1;
     display: block;
     padding: 12px;
     text-decoration: none;
@@ -58,6 +59,66 @@ form.search-bar input[type=text] {
 
 /*have the logo highlight when hovered*/
 .navbar a:hover, .logo-highlight:hover {
-    background-color:#c530f7;
+    background-color:#ca87e1;
     color: rgb(255, 228, 228);
 }
+
+/*display images within the page*/
+.page-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+}
+
+.next-page {
+    width: 30%;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #ca87e1;
+    font-size: 24px;
+    border: 1px solid #ca87e1;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}
+ 
+/*text*/
+h2 {
+   padding-bottom: 10%;
+   padding-top: 10%;
+   padding-right: 5%;
+   padding-left: 5%;
+   font-size: 50px;
+   font-family: 'Caveat', cursive;
+   font-weight: 800;
+}
+
+p {
+    font-size: 20px;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+    font-family: 'Gabriela', serif;
+    line-height: 200%;
+}
+
+/*adds space between page buttons and text*/
+.page-btn {
+    padding-left: 7%;
+}
+
+/*welcome section color*/
+.welcome {
+    background-color: #fffce9;
+    width: 80%;
+    height: 80%;
+    margin:auto;
+    padding-bottom: 7%;
+    margin-top: 50px;
+}
+
+.welcome a button {
+    font-family: 'Shrikhand', cursive;
+}
+
+

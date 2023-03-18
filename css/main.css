@@ -71,8 +71,9 @@ form.search-bar input[type=text] {
     width: 100%;
 }
 
+/*next page buttons*/
 .next-page {
-    width: 30%;
+    width: 40%;
     padding: 10px;
     color: #ffffff;
     background-color: #ca87e1;
@@ -80,7 +81,10 @@ form.search-bar input[type=text] {
     border: 1px solid #ca87e1;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
+    font-family: 'Shrikhand', cursive;
 }
+
+
  
 /*text*/
 h2 {
@@ -115,10 +119,21 @@ p {
     margin:auto;
     padding-bottom: 7%;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.welcome a button {
-    font-family: 'Shrikhand', cursive;
+/*display image of half the page*/
+.half-img {
+    float: left;
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
 }
 
+.mission {
+    float: right;
+    width: 49%;
+    border: 5px solid #ff8c8c;
+    padding-bottom: 12%;
+}
 

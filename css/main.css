@@ -448,13 +448,15 @@ html {
 
     /*styling skip links and referneced https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
 
+    /*skip links list*/
     .skip-links{
         list-style: none;
         margin: 0;
         padding: 0;
+    }
 
-      }
-      .skip-links a{
+    /*making skip links be hidding and appear when tab is pressed*/
+    .skip-links a{
         background: #826cff;
         color: #f3f7ff;
         border: 1px solid white;
@@ -466,8 +468,9 @@ html {
         transition: transform 0.3s;
         font-size: 15px;
         font-family: 'Caveat', cursive;
-      }
+    }
 
-      .skip-links a:focus {
+    /*transformstion for skip-links*/
+    .skip-links a:focus {
         transform: translateY(0%);
       }

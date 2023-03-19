@@ -182,3 +182,14 @@ html {
         font-family: 'Gabriela', serif;
         line-height: 200%;
     }
+
+    /*Footer*/
+    footer {
+        background-color: #ff9f9f;
+        color: #ffffff;
+        font-family: 'Edu NSW ACT Foundation', cursive;
+        font-weight: bolder;
+        padding: 30px 0px 30px 50px;
+        font-size: 20px;
+        margin-top: 200px;
+      }

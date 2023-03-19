@@ -18,61 +18,70 @@
     <title>Midterm Project</title>
 </head>
 <body class="wrapper">
-    <header>
-        <div>
+    <div class="wrapper">
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#welcome">Skip to welcome section</a></l   i>
+            <li><a href="#mission">Skip to mission section</a></li>
+            <li><a href="#shop-more">Skip to shop more section</a></li>
+          </ul>
+        <header>
             <div>
-                <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+                <div>
+                    <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+                </div>
+                <nav id="nav" class="navbar wrapper">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact Us</a>
+                    <!--Search Bar-->
+                    <form class="search-bar" action="#" method="get">
+                        <input id="search-bar" type="text" placeholder="Search" name="search-bar">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </nav>
             </div>
-            <nav class="navbar wrapper">
-                <a href="home.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact Us</a>
-                <!--Search Bar-->
-                <form class="search-bar" action="#" method="get">
-                    <input id="search-bar" type="text" placeholder="Search" name="search-bar">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div>
-            <img class="page-img" src="images/pixabay-images/tart_pixabay.jpg" alt="">
-        </div>
-        <section class="welcome">
-                <h2>WELCOME!</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
-                
-                <a class="page-btn" href="contact.html">
-                    <button class="next-page"><b>Learn more!</b></button>
-                </a>
-        </section>
-        <section class="mission-container">
-            <img class="mission-img" src="images/pixabay-images/wheat-in-sun-crop_pixabay.jpg" alt="">
-            <div class="mission">
-                <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae</p>
-                
-                <a class="page-btn" href="about.html">
-                    <button class="next-page"><b>About us</b></button>
-                </a>
+        </header>
+        <main id="main">
+            <div>
+                <img class="page-img" src="images/pixabay-images/tart_pixabay.jpg" alt="">
             </div>
-        </section>
-        <div>
-            <img class="center-img" src="images/pixabay-images/cake_pixabay.jpg" alt="">
-        </div>
-        <section class="shop-more">
-                <h2>Time for Dessert?</h2>
-                <p>like what you see? why not buy more sweet wheaty treats from us! We have a wide range of selection you can choose from. We display new treats each season in our products page below.</p>
-                
-                <a class="page-btn" href="products.html">
-                    <button class="next-page"><b>Buy Now!</b></button>
-                </a>
-        </section>
-    </main>
-    <footer>
-        <p>&#169; Sweet Wheat Inc, 2023</p>
-    </footer>
+            <section id="welcome" class="welcome">
+                    <h2>WELCOME!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                    
+                    <a class="page-btn" href="contact.html">
+                        <button class="next-page"><b>Learn more!</b></button>
+                    </a>
+            </section>
+            <section id="mission" class="mission-container">
+                <img class="mission-img" src="images/pixabay-images/wheat-in-sun-crop_pixabay.jpg" alt="">
+                <div class="mission">
+                    <h2>Our Mission</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae</p>
+                    
+                    <a class="page-btn" href="about.html">
+                        <button class="next-page"><b>About us</b></button>
+                    </a>
+                </div>
+            </section>
+            <div>
+                <img class="center-img" src="images/pixabay-images/cake_pixabay.jpg" alt="">
+            </div>
+            <section id="shop-more" class="shop-more">
+                    <h2>Time for Dessert?</h2>
+                    <p>like what you see? why not buy more sweet wheaty treats from us! We have a wide range of selection you can choose from. We display new treats each season in our products page below.</p>
+                    
+                    <a class="page-btn" href="products.html">
+                        <button class="next-page"><b>Buy Now!</b></button>
+                    </a>
+            </section>
+        </main>
+            <footer>
+                <p>&#169; Sweet Wheat Inc, 2023</p>
+            </footer>
+    </div>
 </body>
 </html>

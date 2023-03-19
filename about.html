@@ -18,53 +18,62 @@
     <title>Midterm Project</title>
 </head>
 <body class="wrapper">
-    <header>
-        <div>
+    <div class="wrapper">
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+            <li><a href="#back-story">Skip to story section</a></li>
+            <li><a href="#about-team">Skip to team section</a></li>
+            <li><a href="#our-values">Skip to values section</a></li>
+          </ul>
+        <header>
             <div>
-                <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+                <div>
+                    <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+                </div>
+                <nav class="navbar wrapper">
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="contact.html">Contact Us</a>
+                    <!--Search Bar-->
+                    <form class="search-bar" action="#" method="get">
+                        <input id="search-bar" type="text" placeholder="Search" name="search-bar">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </nav>
             </div>
-            <nav class="navbar wrapper">
-                <a href="home.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact Us</a>
-                <!--Search Bar-->
-                <form class="search-bar" action="#" method="get">
-                    <input id="search-bar" type="text" placeholder="Search" name="search-bar">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div>
-            <img class="page-img" src="images/pixabay-images/bakery_pixabay.jpg" alt="">
-        </div>
-        <section class="back-story">
+        </header>
+        <main>
             <div>
-                <h2>How we Started</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                <img class="page-img" src="images/pixabay-images/bakery_pixabay.jpg" alt="">
             </div>
-                <img src="images/pixabay-images/dough_pixabay.jpg" alt="">
-        </section>
-        <div>
-            <img class="page-img" src="images/pixabay-images/baker_pixabay.jpg" alt="">
-        </div>
-        <section class="about-team">
+            <section id="back-story" class="back-story">
+                <div>
+                    <h2>How we Started</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                </div>
+                    <img src="images/pixabay-images/dough_pixabay.jpg" alt="">
+            </section>
             <div>
-                <h2>About the Team</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                <img class="page-img" src="images/pixabay-images/baker_pixabay.jpg" alt="">
             </div>
-        </section>
-        <section class="our-values">
-            <div>
-                <h2>Our Values</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&#169; Sweet Wheat Inc, 2023</p>
-    </footer>
+            <section id="about-team" class="about-team">
+                <div>
+                    <h2>About the Team</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                </div>
+            </section>
+            <section id="our-values" class="our-values">
+                <div>
+                    <h2>Our Values</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&#169; Sweet Wheat Inc, 2023</p>
+        </footer>
+    </div>
 </body>
 </html>

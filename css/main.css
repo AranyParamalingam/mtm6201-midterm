@@ -79,7 +79,7 @@ html {
         padding: 10px;
         color: #ffffff;
         background-color: #ca87e1;
-        font-size: 24px;
+        font-size: 20px;
         border: 1px solid #ca87e1;
         border-left: none; /* Prevent double borders */
         cursor: pointer;
@@ -99,17 +99,19 @@ html {
 
     /*text for welcome and mission section*/
     .welcome h2, .mission h2 {
+        color: #a80000;
         padding-bottom: 10%;
         padding-top: 10%;
         padding-right: 5%;
         padding-left: 5%;
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Caveat', cursive;
         font-weight: 800;
     }
 
     .welcome p, .mission p {
-        font-size: 20px;
+        color: #a80000;
+        font-size: 15px;
         padding-bottom: 10%;
         padding-right: 5%;
         padding-left: 5%;
@@ -163,19 +165,21 @@ html {
     }
 
     .shop-more h2 {
-    text-align: center;
-    padding-bottom: 3%;
-    padding-top: 2%;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-size: 50px;
-    font-family: 'Caveat', cursive;
-    font-weight: 800;
+        color: #a80000;
+        text-align: center;
+        padding-bottom: 3%;
+        padding-top: 2%;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        font-weight: 800;
     }
 
     .shop-more p {
+        color: #a80000;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         padding-bottom: 10%;
         padding-right: 5%;
         padding-left: 5%;
@@ -210,17 +214,19 @@ html {
       }
 
       .back-story h2, .about-team h2, .our-values h2 {
+        color: #040086;
         padding-bottom: 6%;
         padding-top: 10%;
         padding-right: 5%;
         padding-left: 5%;
-        font-size: 50px;
+        font-size: 40px;
         font-family: 'Caveat', cursive;
         font-weight: 800;
     }
 
     .back-story p, .about-team p, .our-values p {
-        font-size: 20px;
+        color: #04006d;;
+        font-size: 15px;
         padding-bottom: 0%;
         padding-right: 5%;
         padding-left: 5%;
@@ -250,7 +256,7 @@ html {
 
     .about-team {
         text-align: center;
-        background-color: #e9f1ff;
+        background-color: #f3f7ff;
         width: 100%;
         height: 200%;
         margin:auto;
@@ -270,4 +276,71 @@ html {
             height: 200%;
             margin:auto;
             padding-bottom: 10%;
+    }
+
+    .title-page {
+        color: #ff9f9f;
+        padding-bottom: 6%;
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 7%;
+        font-size: 60px;
+        font-family: 'Shrikhand', cursive;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .location {
+        background-color: #f3f7ff;
+        width: 100%;
+        height: 200%;
+        margin:auto;
+        padding-bottom: 7%;
+    }
+
+    .location h2, .hours-operating h2 {
+        color: #aa0000;
+        padding-bottom: 6%;
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 7%;
+        font-size: 40px;
+        font-family: 'Caveat', cursive;
+        font-weight: 800;
+    }
+    
+    .location iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        padding-top: 10px;
+
+    }
+
+    .location p, .hours-operating p {
+        color: #04006d;;
+        font-size: 15px;
+        padding-bottom: 0%;
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-family: 'Gabriela', serif;
+        line-height: 200%;
+        text-align: center;
+    }
+
+    .hours-operating {
+        background-image:url(../images/pixabay-images/crumbled-bread_pixabay.jpg);
+        width: 100%;
+        background-size: 100%;
+
+    }
+
+    .hours-operating div {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        height: 200%;
+        margin:auto;
+        padding-bottom: 15%;
     }

@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+     <!-- Icons & CSS stylesheet -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link href="css/reset.css" rel="stylesheet">
+     <link href="css/main.css" rel="stylesheet">
+
+     <!-- Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Edu+NSW+ACT+Foundation:wght@400;500&family=Gabriela&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <title>Midterm Project</title>
 </head>
-<body>
-    
+<body class="wrapper">
+    <header>
+        <div>
+            <div>
+                <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+            </div>
+            <nav class="navbar wrapper">
+                <a href="home.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact Us</a>
+                <!--Search Bar-->
+                <form class="search-bar" action="#" method="get">
+                    <input id="search-bar" type="text" placeholder="Search" name="search-bar">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="title-page">
+            <h1>Contact us</h1>
+        </div>
+        <div>
+            <img class="page-img" src="images/pixabay-images/coffeshop_pixabay.jpg" alt="">
+        </div>
+        <section class="location">
+            <div>
+                <h2>Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d89725.11319483917!2d-75.83024506869924!3d45.350633297014426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4cce072014490147%3A0x96be65c729a98488!2s1377%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V7!3m2!1d45.3506547!2d-75.7602053!5e0!3m2!1sen!2sca!4v1679247809267!5m2!1sen!2sca" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>College Square Mall, 1377 Woodroffe Ave, Nepean, ON K2G 1V7</p>
+            </div>
+        </section>
+        <section class="hours-operating">
+            <div>
+                <h2>Our Hours</h2>
+                <p>Open from <time>10:00</time>am to <time>8:30</time>pm every weekday.</p>
+                <p>Open from <time>12:00</time>am to <time>10:00</time>pm every weekend.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; Sweet Wheat Inc, 2023</p>
+    </footer>
 </body>
 </html>

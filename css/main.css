@@ -99,16 +99,16 @@ html {
 
     /*text for welcome and mission section*/
     .welcome h2, .mission h2 {
-    padding-bottom: 10%;
-    padding-top: 10%;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-size: 50px;
-    font-family: 'Caveat', cursive;
-    font-weight: 800;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 50px;
+        font-family: 'Caveat', cursive;
+        font-weight: 800;
     }
 
-    .welcome p, .mission p {
+    .welcome p, .mission p, .back-story p {
         font-size: 20px;
         padding-bottom: 10%;
         padding-right: 5%;
@@ -126,7 +126,7 @@ html {
     .mission-container {
         border: 5px solid rgb(255, 228, 228);
         display: grid;
-            /*6 columns, 3 rows*/
+            /*2 columns, 1 rows*/
             grid-template-columns: repeat(2, 1fr, 2fr);
             grid-template-rows: (1fr);
             grid-gap: 20px;
@@ -194,4 +194,49 @@ html {
         margin-top: 200px;
       }
 
-      
+      /*about page - back story*/
+      .back-story {
+        background-color: #fffce9;
+        width: 100%;
+        height: 200%;
+        margin:auto;
+        padding-bottom: 7%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        display: grid;
+            /*1 columns, 2 rows*/
+            grid-template-columns: (1fr);
+            grid-template-rows: repeat(2, 1fr, 2fr);
+            grid-gap: 20px;
+      }
+
+      .back-story h2 {
+        padding-bottom: 10%;
+        padding-top: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Caveat', cursive;
+        font-weight: 800;
+    }
+
+    .back-story div {
+        display: grid;
+        justify-content:center;
+        align-items:center;
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+    }
+
+    .back-story img {
+        display: grid;
+        justify-content:center;
+        align-items:center;
+        grid-column: 1 / 1;
+        grid-row: 2 / 3;
+
+        width: 84%;
+        padding: 8%;
+    }

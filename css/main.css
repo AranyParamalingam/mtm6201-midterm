@@ -23,6 +23,7 @@ html {
         height: 50%;
     }
 
+    /*spin animation on logo*/
     header img:hover {
         animation-name: spin;
         animation-duration: 4s;
@@ -106,6 +107,7 @@ html {
         font-family: 'Shrikhand', cursive;
     }
 
+    /*animation on buttons - it turns pink*/
     .next-page:hover {
         animation-name: color-change-pink;
         animation-duration: 0.5s;
@@ -174,6 +176,7 @@ html {
             /*padding*/
     }
 
+    /*display image on the left*/
     .mission-img {
         display: grid;
             justify-content:left;
@@ -182,6 +185,7 @@ html {
         grid-row: 1 / 1;
     }
 
+    /*display text with button on the right*/
     .mission {
         display: grid;
             justify-content: right;
@@ -235,10 +239,10 @@ html {
         padding: 30px 0px 30px 50px;
         font-size: 20px;
         margin-top: 200px;
-      }
+    }
 
       /*about page - back story*/
-      .back-story {
+    .back-story {
         background-color: #fffce9;
         width: 100%;
         height: 200%;
@@ -250,9 +254,10 @@ html {
             grid-template-columns: (1fr);
             grid-template-rows: repeat(2, 1fr, 2fr);
             grid-gap: 2px;
-      }
+    }
 
-      .back-story h2, .about-team h2, .our-values h2 {
+    /*headers for the about page*/
+    .back-story h2, .about-team h2, .our-values h2 {
         color: #040086;
         padding-bottom: 6%;
         padding-top: 10%;
@@ -263,6 +268,7 @@ html {
         font-weight: 800;
     }
 
+    /*paragraphs for the about page*/
     .back-story p, .about-team p, .our-values p {
         color: #04006d;;
         font-size: 15px;
@@ -273,6 +279,7 @@ html {
         line-height: 200%;
     }
 
+    /*creates grid to have text above a centered smaller img*/
     .back-story div {
         text-align:left;
         display: grid;
@@ -293,6 +300,7 @@ html {
         padding: 6%;
     }
 
+    /*creating about team to be centered*/
     .about-team {
         text-align: center;
         background-color: #f3f7ff;
@@ -302,10 +310,12 @@ html {
         padding-bottom: 10%;
     }
 
+    /*setting background color to values to be light green*/
     .our-values {
         background-color: rgb(239, 255, 242);
     }
 
+    /*having the text in values section to be in a rounded box*/
     .our-values div {
             text-align: right;
             background-color: #ffffff;
@@ -317,6 +327,7 @@ html {
             padding-bottom: 10%;
     }
 
+    /*having the h1 of the page to be big and centered*/
     .title-page {
         color: #ff9f9f;
         padding-bottom: 6%;
@@ -329,6 +340,7 @@ html {
         text-align: center;
     }
 
+    /*background color to location*/
     .location {
         background-color: #f3f7ff;
         width: 100%;
@@ -337,6 +349,7 @@ html {
         padding-bottom: 7%;
     }
 
+    /*h2 styling to the contact page*/
     .location h2, .hours-operating h2 {
         color: #aa0000;
         padding-bottom: 6%;
@@ -348,6 +361,7 @@ html {
         font-weight: 800;
     }
     
+    /*displaying the google maps embed in the middle*/
     .location iframe {
         display: block;
         margin-left: auto;
@@ -357,6 +371,7 @@ html {
 
     }
 
+    /*paragraph styling to the contact page*/
     .location p, .hours-operating p {
         color: #04006d;;
         font-size: 15px;
@@ -369,6 +384,7 @@ html {
         text-align: center;
     }
 
+    /*creating background image for hours section*/
     .hours-operating {
         background-image:url(../images/pixabay-images/crumbled-bread_pixabay.jpg);
         width: 100%;
@@ -376,6 +392,7 @@ html {
 
     }
 
+    /*backing background a lower white opacity*/
     .hours-operating div {
         background-color: rgba(255, 255, 255, 0.9);
         width: 100%;
@@ -384,6 +401,7 @@ html {
         padding-bottom: 15%;
     }
 
+    /*products - arranging the images in */
     .treat-img {
         margin-left: auto;
         margin-right: auto;

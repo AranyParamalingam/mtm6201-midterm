@@ -23,6 +23,26 @@ html {
         height: 50%;
     }
 
+    header img:hover {
+        animation-name: spin;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+        animation-direction:normal;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes spin {
+        0%,
+        100% {
+        }
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
 /*nav bar*/
     .navbar {
         width: 100%;
@@ -80,10 +100,29 @@ html {
         color: #ffffff;
         background-color: #ca87e1;
         font-size: 20px;
-        border: 1px solid #ca87e1;
+        border: 1px solid #ffffff;
         border-left: none; /* Prevent double borders */
         cursor: pointer;
         font-family: 'Shrikhand', cursive;
+    }
+
+    .next-page:hover {
+        animation-name: color-change-pink;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-direction:normal;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes color-change-pink {
+        0%,
+        100% {
+        }
+        0% {
+        }
+        100% {
+            background-color: #ff8080;
+        }
     }
 
     /*welcome section color*/
@@ -343,4 +382,45 @@ html {
         height: 200%;
         margin:auto;
         padding-bottom: 15%;
+    }
+
+    .treat-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .treat-btn {
+        width: 40%;
+        margin-left: 30%;
+        padding: 10px;
+        color: #ffffff;
+        background-color: #ff6e6e;
+        font-size: 20px;
+        border: 1px solid #ffffff;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    .treat-btn:hover {
+        animation-name: color-change;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        animation-direction:normal;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes color-change {
+        0%,
+        100% {
+        }
+        0% {
+        }
+        100% {
+            background-color: #ff9c62;
+        }
     }

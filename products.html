@@ -21,22 +21,25 @@
     <!--wrapper class to contain all elements-->
     <div class="wrapper">
         <!--Skip links for accessibility guidlines-->
-        <ul class="skip-links">
-            <li><a href="#nav">Skip to nav</a></li>
-            <li><a href="#main">Skip to main content</a></li>
+        <ul role="list" class="skip-links">
+            <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
+            <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
+            <li role="listitem"><a href="#welcome" aria-label="Skip to the welcome section">Skip to welcome section</a></li>
+            <li role="listitem"><a href="#mission" aria-label="Skip to the mission section">Skip to mission section</a></li>
+            <li role="listitem"><a href="#shop-more" aria-label="Skip to the shop more section">Skip to shop more section</a></li>
           </ul>
         <header>
             <div>
-                <!--logo-->
-                <div>
+                <!--Logo-->
+                <div role="figure">
                     <img src="images/wireframes-and-ref/logo.png" alt="logo image" itemscope itemtype="https://schema.org/logo">
                 </div>
-                <!--nav-->
-                <nav class="navbar wrapper">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html">Contact Us</a>
+                <!--Navigation-->
+                <nav role="navigation" id="nav" class="navbar wrapper">
+                    <a href="home.html" aria-label="Navigating to the Home page">Home</a>
+                    <a href="about.html" aria-label="Navigating to the About page">About Us</a>
+                    <a href="products.html" aria-label="Navigating to the Products page">Products</a>
+                    <a href="contact.html" aria-label="Navigating to the Contact us page">Contact Us</a>
                     <!--Search Bar-->
                     <form class="search-bar" action="#" method="get">
                         <input id="search-bar" type="text" placeholder="Search" name="search-bar">
@@ -45,41 +48,41 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main role="main">
             <!--images of treats with color changing buttons-->
-            <div class="title-page">
+            <div role="figure" class="title-page">
                 <h1 itemscope itemtype="https://schema.org/Product">Our Treats!</h1>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/berry-cupcakes_pixabay.jpg" alt="cupcakes with berries on top">
                 <button class="treat-btn"><b>Berry Cupcakes</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/macaroons-stacked_pixabay.jpg" alt="3 macaroons stacked">
                 <button class="treat-btn"><b>Macaroons</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/coffee-donut_pixabay.jpg" alt="chocolate donut on top of coffee beans">
                 <button class="treat-btn"><b>Coffee Donuts</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/pink-cupcakes_pixabay.jpg" alt="cupcakes with pink icing and sprinkles">
                 <button class="treat-btn"><b>Sakura Cupcakes</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/muffins_pixabay.jpg" alt="2 muffins with blueberies">
                 <button class="treat-btn"><b>Blueberry Muffins</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/waffles-pixabay.jpg" alt="waffles in a shape of a heart">
                 <button class="treat-btn"><b>Heart Waffles</b></button>
             </div>
-            <div>
+            <div role="figure">
                 <img class="treat-img" src="images/pixabay-images/twisted-bread_pixabay.jpg" alt="mutliple twisted bread on table">
                 <button class="treat-btn"><b>Twisted Bread</b></button>
             </div>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <p>&#169; Sweet Wheat Inc, 2023</p>
         </footer>
     </div>

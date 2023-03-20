@@ -20,25 +20,26 @@
 <body class="wrapper">
     <!--Wrapper class to contain all elements-->
     <div class="wrapper">
-        <!--hidden skip links-->
-        <ul class="skip-links">
-            <li><a href="#nav">Skip to nav</a></li>
-            <li><a href="#main">Skip to main content</a></li>
-            <li><a href="#location">Skip to location section</a></li>
-            <li><a href="#hours">Skip to hours section</a></li>
-        </ul>
+        <!--Skip links for accessibility guidlines-->
+        <ul role="list" class="skip-links">
+            <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
+            <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
+            <li role="listitem"><a href="#welcome" aria-label="Skip to the welcome section">Skip to welcome section</a></li>
+            <li role="listitem"><a href="#mission" aria-label="Skip to the mission section">Skip to mission section</a></li>
+            <li role="listitem"><a href="#shop-more" aria-label="Skip to the shop more section">Skip to shop more section</a></li>
+          </ul>
         <header>
             <div>
-                <!--logo-->
-                <div>
+                <!--Logo-->
+                <div role="figure">
                     <img src="images/wireframes-and-ref/logo.png" alt="logo image" itemscope itemtype="https://schema.org/logo">
                 </div>
-                <!--Navagation-->
-                <nav class="navbar wrapper">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html">Contact Us</a>
+                <!--Navigation-->
+                <nav role="navigation" id="nav" class="navbar wrapper">
+                    <a href="home.html" aria-label="Navigating to the Home page">Home</a>
+                    <a href="about.html" aria-label="Navigating to the About page">About Us</a>
+                    <a href="products.html" aria-label="Navigating to the Products page">Products</a>
+                    <a href="contact.html" aria-label="Navigating to the Contact us page">Contact Us</a>
                     <!--Search Bar-->
                     <form class="search-bar" action="#" method="get">
                         <input id="search-bar" type="text" placeholder="Search" name="search-bar">
@@ -47,25 +48,25 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main role="main">
             <!--title for page-->
             <div class="title-page">
                 <h1>Contact us</h1>
             </div>
             <!--image of a coffee for table-->
-            <div>
+            <div role="figure">
                 <img class="page-img" src="images/pixabay-images/coffeshop_pixabay.jpg" alt="image of a latte next to a laptop and paper">
             </div>
             <!--location sections with google maps embed-->
             <section id="location" class="location">
-                <div>
+                <div itemscope itemtype="https://schema.org/location">
                     <h2>Location</h2>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d89725.11319483917!2d-75.83024506869924!3d45.350633297014426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4cce072014490147%3A0x96be65c729a98488!2s1377%20Woodroffe%20Ave%2C%20Nepean%2C%20ON%20K2G%201V7!3m2!1d45.3506547!2d-75.7602053!5e0!3m2!1sen!2sca!4v1679247809267!5m2!1sen!2sca" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <p>College Square Mall, 1377 Woodroffe Ave, Nepean, ON K2G 1V7</p>
                 </div>
             </section>
             <!--hours section with time tag-->
-            <section id="hours" class="hours-operating">
+            <section id="hours" class="hours-operating" itemscope itemtype="https://schema.org/openingHours">
                 <div>
                     <h2>Our Hours</h2>
                     <p>Open from <time>10:00</time>am to <time>08:30</time>pm every weekday.</p>
@@ -74,7 +75,7 @@
             </section>
         </main>
         <!--footer-->
-        <footer>
+        <footer role="contentinfo">
             <p>&#169; Sweet Wheat Inc, 2023</p>
         </footer>
     </div>

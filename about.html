@@ -20,26 +20,26 @@
 <body class="wrapper">
     <!--class wrapper-->
     <div class="wrapper">
-        <!--Hidden skip links-->
-        <ul class="skip-links">
-            <li><a href="#nav">Skip to nav</a></li>
-            <li><a href="#main">Skip to main content</a></li>
-            <li><a href="#back-story">Skip to story section</a></li>
-            <li><a href="#about-team">Skip to team section</a></li>
-            <li><a href="#our-values">Skip to values section</a></li>
+        <!--Skip links for accessibility guidlines-->
+        <ul role="list" class="skip-links">
+            <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
+            <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
+            <li role="listitem"><a href="#welcome" aria-label="Skip to the welcome section">Skip to welcome section</a></li>
+            <li role="listitem"><a href="#mission" aria-label="Skip to the mission section">Skip to mission section</a></li>
+            <li role="listitem"><a href="#shop-more" aria-label="Skip to the shop more section">Skip to shop more section</a></li>
           </ul>
         <header>
             <div>
-                <!--logo-->
-                <div>
+                <!--Logo-->
+                <div role="figure">
                     <img src="images/wireframes-and-ref/logo.png" alt="logo image" itemscope itemtype="https://schema.org/logo">
                 </div>
-                <!--navigation-->
-                <nav class="navbar wrapper">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html">Contact Us</a>
+                <!--Navigation-->
+                <nav role="navigation" id="nav" class="navbar wrapper">
+                    <a href="home.html" aria-label="Navigating to the Home page">Home</a>
+                    <a href="about.html" aria-label="Navigating to the About page">About Us</a>
+                    <a href="products.html" aria-label="Navigating to the Products page">Products</a>
+                    <a href="contact.html" aria-label="Navigating to the Contact us page">Contact Us</a>
                     <!--Search Bar-->
                     <form class="search-bar" action="#" method="get">
                         <input id="search-bar" type="text" placeholder="Search" name="search-bar">
@@ -48,13 +48,13 @@
                 </nav>
             </div>
         </header>
-        <main>
+        <main role="main">
             <!--image of bakery-->
-            <div>
+            <div role="figure">
                 <img class="page-img" src="images/pixabay-images/bakery_pixabay.jpg" alt="image of bakery with staff in the distance">
             </div>
             <!--back story section-->
-            <section id="back-story" class="back-story">
+            <section id="back-story" class="back-story" itemscope itemtype="https://schema.org/backstory">
                 <div>
                     <h2>How we Started</h2>
                     <p>Sweet Treats Bakery was born out of the passion and love for baking of its founder, Sarah. Sarah's journey began in her home kitchen, where she would experiment with different recipes and techniques, creating delicious treats that were loved by her family and friends. As her passion for baking grew, she began to dream of starting her own bakery, where she could share her creations with a wider audience. After years of perfecting her recipes and techniques, Sarah decided to take the leap and start Sweet Treats Bakery. She rented a small space, bought the necessary equipment, and began baking her heart out. Soon, word spread about the delicious treats coming out of Sarah's bakery, and the demand for her products grew rapidly. Today, Sweet Treats Bakery is a thriving business with a loyal following, offering a wide range of delectable treats that are made with the same passion and love that inspired its inception.</p>
@@ -63,11 +63,11 @@
                     <img src="images/pixabay-images/dough_pixabay.jpg" alt="kneaded dough next to rolling pin">
             </section>
             <!-- page image representing next section-->
-            <div>
+            <div role="figure">
                 <img class="page-img" src="images/pixabay-images/baker_pixabay.jpg" alt="statue of bakers and a cupcake">
             </div>
             <!--about the team section-->
-            <section id="about-team" class="about-team">
+            <section id="about-team" class="about-team" itemscope itemtype="https://schema.org/OrganizationRole">
                 <div>
                     <h2>About the Team</h2>
                     <p>At Sweet Treats Bakery, we have a team of dedicated and passionate bakers who share a love for baking and creating delicious treats. Led by our founder, Sarah, our team is committed to delivering exceptional quality and taste in every product that we offer. Each member of our team brings a unique set of skills and experience to the table, allowing us to create a diverse range of baked goods that cater to all tastes and preferences. Our team works tirelessly behind the scenes, from early morning hours to late at night, to ensure that our customers receive the freshest and highest quality baked goods. We take immense pride in our work, and our attention to detail is evident in every bite. We believe that our team is the heart and soul of Sweet Treats Bakery, and we are grateful for their dedication and hard work in bringing our customers the very best baked treats.</p>
@@ -81,7 +81,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <p>&#169; Sweet Wheat Inc, 2023</p>
         </footer>
     </div>

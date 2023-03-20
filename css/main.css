@@ -487,49 +487,37 @@ html {
     }
 
     header img {
-        display:block;
-        width: 20%;
-        height: 20%;
+        float: left;
+        margin-left: 20px;
+        width: 17%;
+        height: 17%;
     }
 
 /*nav bar*/
     .navbar {
+        display: block;
         width: 100%;
-        padding: 0px;
+        padding-top: 3%;
+        padding-bottom: 7%;
     }
 
     /*Search Bar*/
     form.search-bar input[type=text] {
-        padding: 10px;
-        font-size: 17px;
-        border: 1px solid #ca87e1;
-        width: 80%;
+        display: inline-block;
+        padding: 8px;
+        font-size: 15px;
+        width: 20%;
         background: #ffffff;
-        margin-right: 0%;
     }
 
     form.search-bar button {
-        width: 10%;
-        padding: 10px;
-        color: #ca87e1;
-        background-color: transparent;
-        font-size: 17px;
-        border: 1px solid #ca87e1;
-        border-left: none; /* Prevent double borders */
-        cursor: pointer;
+        display: inline-block;
+        width: 5%;
+        padding: 7px;
     }
 
     /*navbar hovering and untouched*/
     .navbar a {
-        color: #ca87e1;
-        display: inline;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    /*have the logo highlight when hovered*/
-    .navbar a:hover, .logo-highlight:hover {
-        background-color:#ca87e1;
-        color: rgb(255, 228, 228);
+        display: inline-block;
     }
 }

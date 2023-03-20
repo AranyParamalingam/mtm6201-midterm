@@ -21,25 +21,25 @@
 <body class="wrapper">
     <div class="wrapper">
         <!--Skip links for accessibility guidlines-->
-        <ul class="skip-links">
-            <li><a href="#nav">Skip to nav</a></li>
-            <li><a href="#main">Skip to main content</a></li>
-            <li><a href="#welcome">Skip to welcome section</a></li>
-            <li><a href="#mission">Skip to mission section</a></li>
-            <li><a href="#shop-more">Skip to shop more section</a></li>
+        <ul role="list" class="skip-links">
+            <li role="listitem" ><a href="#nav" aria-label="Skip to the Navigation">Skip to nav</a></li>
+            <li role="listitem"><a href="#main" aria-label="Skip to main">Skip to main content</a></li>
+            <li role="listitem"><a href="#welcome" aria-label="Skip to the welcome section">Skip to welcome section</a></li>
+            <li role="listitem"><a href="#mission" aria-label="Skip to the mission section">Skip to mission section</a></li>
+            <li role="listitem"><a href="#shop-more" aria-label="Skip to the shop more section">Skip to shop more section</a></li>
           </ul>
         <header>
             <div>
                 <!--Logo-->
-                <div>
-                    <img src="images/wireframes-and-ref/logo.png" alt="logo image">
+                <div role="figure">
+                    <img src="images/wireframes-and-ref/logo.png" alt="logo image" itemscope itemtype="https://schema.org/logo">
                 </div>
                 <!--Navigation-->
-                <nav id="nav" class="navbar wrapper">
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="products.html">Products</a>
-                    <a href="contact.html">Contact Us</a>
+                <nav role="navigation" id="nav" class="navbar wrapper">
+                    <a href="home.html" aria-label="Navigating to the Home page">Home</a>
+                    <a href="about.html" aria-label="Navigating to the About page">About Us</a>
+                    <a href="products.html" aria-label="Navigating to the Products page">Products</a>
+                    <a href="contact.html" aria-label="Navigating to the Contact us page">Contact Us</a>
                     <!--Search Bar-->
                     <form class="search-bar" action="#" method="get">
                         <input id="search-bar" type="text" placeholder="Search" name="search-bar">
@@ -48,7 +48,7 @@
                 </nav>
             </div>
         </header>
-        <main id="main">
+        <main role="main" id="main">
             <!--Page Image-->
             <div>
                 <img class="page-img" src="images/pixabay-images/tart_pixabay.jpg" alt="tart on table">
@@ -56,7 +56,7 @@
             <!--welcome section with button that goes to contact page-->
             <section id="welcome" class="welcome">
                     <h2>WELCOME!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae.</p>
+                    <p>Welcome to Sweet Wheat, the ultimate destination for all your bakery cravings! We are delighted to have you visit our website, where you can explore a wide range of delicious treats that are freshly baked to perfection. Our bakery is committed to bringing you the finest quality baked goods made from the freshest and highest quality ingredients. Whether you are in the mood for fluffy croissants, scrumptious cakes, or delectable pastries, we have got you covered.  We are excited to have you here and hope to exceed your expectations with our baked treats.</p>
                     
                     <div class="page-btn">
                         <a class="next-page" href="contact.html">Learn more!</a>
@@ -67,7 +67,7 @@
                 <img class="mission-img" src="images/pixabay-images/wheat-in-sun-crop_pixabay.jpg" alt="wheat in the sun">
                 <div class="mission">
                     <h2>Our Mission</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quam nihil perferendis inventore quia libero tempora unde vitae incidunt nisi quae placeat neque ipsam aspernatur? Sit deleniti assumenda eum vitae</p>
+                    <p>At Sweet Wheat, our mission is to provide our customers with the most delectable and high-quality baked goods using the freshest and finest ingredients. We believe that baking is not just a science but an art that requires passion, dedication, and creativity. With our commitment to excellence, we aim to be the go-to bakery for all your sweet cravings.</p>
 
                     <div class="page-btn">
                         <a class="next-page" href="about.html">About us</a>
@@ -83,13 +83,14 @@
                     <h2>Time for Dessert?</h2>
                     <p>like what you see? why not buy more sweet wheaty treats from us! We have a wide range of selection you can choose from. We display new treats each season in our products page below.</p>
                     
-                    <div class="page-btn">
+                    <div class="page-btn" 
+                    <img src="images/wireframes-and-ref/logo.png" alt="logo image" itemscope itemtype="https://schema.org/Product">
                         <a class="next-page" href="products.html">Buy now!</a>
                     </div>
             </section>
         </main>
         <!--footer with copyright-->
-            <footer>
+            <footer role="contentinfo">
                 <p>&#169; Sweet Wheat Inc, 2023</p>
             </footer>
     </div>

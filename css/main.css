@@ -475,3 +475,61 @@ html {
     .skip-links a:focus {
         transform: translateY(0%);
     }
+
+/*desktop version*/
+@media screen and (min-width: 760px) {
+    header {
+        text-align: right;
+        background-color:rgb(252, 236, 236);
+        padding: 20px;
+        font-size: 1.33em;
+        font-family: 'Shrikhand', cursive;
+    }
+
+    header img {
+        display:block;
+        width: 20%;
+        height: 20%;
+    }
+
+/*nav bar*/
+    .navbar {
+        width: 100%;
+        padding: 0px;
+    }
+
+    /*Search Bar*/
+    form.search-bar input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid #ca87e1;
+        width: 80%;
+        background: #ffffff;
+        margin-right: 0%;
+    }
+
+    form.search-bar button {
+        width: 10%;
+        padding: 10px;
+        color: #ca87e1;
+        background-color: transparent;
+        font-size: 17px;
+        border: 1px solid #ca87e1;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+    }
+
+    /*navbar hovering and untouched*/
+    .navbar a {
+        color: #ca87e1;
+        display: inline;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+    /*have the logo highlight when hovered*/
+    .navbar a:hover, .logo-highlight:hover {
+        background-color:#ca87e1;
+        color: rgb(255, 228, 228);
+    }
+}
